@@ -22,4 +22,7 @@ const Posts = (props) => {
         </div>
     )
 }
+
+//-----test
+let a = 0
 export default Posts
