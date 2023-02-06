@@ -1,0 +1,31 @@
+.main {
+   margin: auto;
+    background-color: rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 14px;
+    display: grid;
+    width: 730px;
+    justify-content:space-around;
+    grid-template-areas:
+        "sep sep"
+        "dity zsu"
+        "boy  other"
+    ;
+    grid-area: c;
+    padding: 8px;
+}
+
+@media (max-width: 800px) {
+    .main {
+        justify-content: center;
+        width: 98%;
+        padding: 0;
+        grid-template-areas:
+            "sep sep"
+            "dity dity"
+            "zsu zsu"
+            "boy boy"
+            "other other"
+        ;
+    }
+}

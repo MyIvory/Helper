@@ -1,0 +1,27 @@
+.main {
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-gap: 10px;
+    overflow: scroll;
+    height: 1000px;
+
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+    /*chrome*/
+}
+
+.main {
+    -ms-overflow-style: none;
+    /* IE и Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+@media(max-width: 800px) {
+    .main {
+        min-width: 350px;
+        grid-auto-rows: 350px;
+        
+    }
+}

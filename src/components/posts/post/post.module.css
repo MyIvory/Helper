@@ -1,0 +1,25 @@
+.post{
+    margin: auto;
+    background-color: rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 14px; 
+    padding: 5px;
+    display: grid;
+    max-width: 735px;
+    justify-content:space-around;
+    grid-template-columns: 140px 1fr 110px;
+    grid-template-areas: 
+    "ava info bar"
+    ;  
+}
+@media(max-width: 800px) {
+    .post {
+        width: 95%;
+        grid-template-columns: 120px 1fr;
+        justify-content: center;
+        grid-template-areas: 
+        "ava info"
+        "bar info"
+        ;
+    }
+}

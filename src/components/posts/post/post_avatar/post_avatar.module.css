@@ -1,0 +1,30 @@
+.post {
+    display: grid;
+    padding: 10px;
+    grid-template-rows: 1fr 30px;
+    grid-gap: 10px;
+    grid-area: ava;
+    width: 120px;
+
+}
+
+.author_img {
+    background-color: red;
+    color: white;
+    width: 115px;
+    height: 115px;
+}
+
+.author_name {
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+@media(max-width: 800px) {
+    .post {
+        height: 120px;
+
+    }
+}

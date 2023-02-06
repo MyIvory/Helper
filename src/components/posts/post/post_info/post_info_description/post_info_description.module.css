@@ -1,0 +1,36 @@
+.post{  
+    display: grid;
+    grid-template-rows: 20px 1fr ;
+    grid-area: des;
+    align-items: center;
+    text-align: left;
+    font-size: 14px;
+    line-height: 23px; 
+    margin-bottom: 10px;
+}
+.post h2{
+    color: #f84103;
+    text-align: center;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+.des{
+    overflow: hidden;
+    max-height: 120px;
+}
+@media (max-width:800px) {
+    .post{
+        padding: 10px;   
+    }
+    .des{
+        overflow: hidden;
+        max-height: 190px;
+        font-size: 17px;
+        padding-left: 5px;
+    }
+    .post h2{
+        font-size: 22px;
+    }
+}

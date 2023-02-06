@@ -1,0 +1,85 @@
+.main {
+    margin-top: 23px;
+    background-color: rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 14px;
+    display: grid;
+    grid-template-areas:
+    "u u"
+    "p p"
+    "bl bp"
+    ;
+    grid-gap: 20px;
+    align-items:flex-end;
+    padding: 5px;
+}
+
+.icon {
+    color: #f84103;
+    font-size: 25px;
+    position: relative;
+    top: 17px;
+    right: 10px;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid #f84103;;
+    color: f84103;
+    background: transparent;
+    width: 175px;
+    height: 25px;
+
+}
+input:focus {
+    outline: none;
+
+}
+.but{
+    align-self: center;  
+    background-color:rgba(248, 65, 3,0.85); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 40px;
+    margin: 5px;
+}
+.but span{
+    color: white;
+    display: block;
+    float: left;
+    position: relative;
+    line-height: 1;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing:1px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.but:hover{
+    cursor: pointer;
+    background-color:rgba(248, 65, 3,1.0); 
+}
+.but_login{
+    grid-area: bl;
+}
+.but_pass{
+    grid-area: bp;
+}
+.user{
+    grid-area: u;
+}
+.pass{
+    grid-area: p;
+}
+.user,.pass{
+    margin: auto;
+}
+@media (max-width:800px) {
+    .main{
+        grid-template-rows: auto;
+
+    }
+
+}

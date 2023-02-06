@@ -1,0 +1,22 @@
+.post {
+    padding: 5px;
+    display: grid;
+    grid-template-rows:1fr 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "des des" 
+        "date but"
+        ;
+    grid-gap: 0 10px;
+    grid-area: info;
+}
+@media (max-width:800px) {
+    .post{
+        grid-template-rows: 1fr 50px;
+        grid-template-areas: 
+        "des des"
+        "date but"
+        ;
+    }
+    
+}

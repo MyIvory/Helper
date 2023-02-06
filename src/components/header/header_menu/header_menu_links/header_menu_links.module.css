@@ -1,0 +1,14 @@
+.main {
+    display: grid;
+    width: 400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-area: li;
+}
+@media(max-width: 800px) {
+    .main {
+        width: 100%;
+        padding-top: 10px;
+        grid-template-columns: (auto,1fr) ;  
+    }
+}
